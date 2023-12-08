@@ -1,8 +1,32 @@
 body {
-    background-color: black;
+    background-color: rgb(20,20,20);
 }
 
 li a {
     color: white;
     font-size: 0.8rem;
+}
+
+.gener-container {
+    display: flex;
+    padding-inline: 1rem;
+}
+
+h3 {
+    margin: 0;
+    padding-inline: .5rem 1rem;
+    color: white;
+}
+
+.dropdown button, .d-flex button {
+    background-color: black;
+    border-color: white;
+    color: white;
+}
+
+.btn-align:focus {
+    color: #fff;
+    background-color: black;
+    border: 2px solid white;
+    box-shadow: 0 0 0 0.2rem rgba(130,138,145,.5);
 }
