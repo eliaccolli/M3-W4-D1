@@ -2,7 +2,7 @@ body {
     background-color: rgb(20,20,20);
 }
 
-li a {
+#nav--item {
     color: white;
     font-size: 0.8rem;
 }
@@ -29,4 +29,20 @@ h3 {
     background-color: black;
     border: 2px solid white;
     box-shadow: 0 0 0 0.2rem rgba(130,138,145,.5);
+}
+
+.footer-container{
+    padding-inline: 20%;
+    color: rgb(156, 156, 156);
+    font-size: 0.8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+#service-button {
+    background-color: rgb(20,20,20);
+    border-color: rgb(156, 156, 156);
+    color: rgb(156, 156, 156);
 }
