@@ -10,147 +10,264 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
     <div class="nav-container">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">
-                <img 
-                    src="./assets/imgs/Netflix_Logo_RGB.png" 
-                    alt="logo"
-                    height="50"
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./assets/imgs/Netflix_Logo_RGB.png"
+              alt="logo"
+              height="50"
+            />
+          </a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="nav--item"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav--item" href="#">TV Shows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav--item" href="#">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav--item" href="#">Recently Added</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav--item" href="#">My List</a>
+            </li>
+          </ul>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" id="nav--item" href="#">
+                  <i class="bi bi-search"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav--item" href="#">KIDS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav--item" href="#">
+                  <i class="bi bi-bell"></i>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
                 >
-            </a>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" id="nav--item" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="nav--item" href="#">TV Shows</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="nav--item" href="#">Movies</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="nav--item" href="#">Recently Added</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="nav--item" href="#">My List</a>
-                </li>
+                  <img
+                    src="https://mdbootstrap.com/img/Photos/Avatars/img%20(2).jpg"
+                    class="rounded-circle img-fluid"
+                    height="25"
+                    width="25"
+                  />
+                </a>
+              </li>
             </ul>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link" id="nav--item" href="#">
-                        <i class="bi bi-search"></i>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="nav--item" href="#">KIDS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="nav--item" href="#">
-                          <i class="bi bi-bell"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
-                            data-mdb-toggle="dropdown" aria-expanded="false">
-                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(2).jpg" 
-                                class="rounded-circle img-fluid"
-                                height='25' width='25'>
-                            </a>
-                    </li>
-                </ul>
-            </div>
           </div>
-        </nav>
+        </div>
+      </nav>
     </div>
     <div class="gener-container">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
-            <div class="d-flex">
-              <h3>TV Shows</h3>
-              <div class="dropdown">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" 
-                data-bs-toggle="dropdown" aria-expanded="false"> Genres
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <li><a class="dropdown-item" href="#">Movies</a></li>
-                  <li><a class="dropdown-item" href="#">TV Shows</a></li>
-                  <li><a class="dropdown-item" href="#">Trailers</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="btn-group mr-2 d-flex" role="group" aria-label="First group">
-              <button type="button" class="btn btn-align">1</button>
-              <button type="button" class="btn btn-align">2</button>
-            </div>
-        </div>
-    </div>
-    <div class="gener-container flex-column">
-      <div  id='main' class="p-4">
-        <div id="carouselControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
-           <div class="carousel-inner mb-5">
-             <div>
-               <h4 class="text-light">Trending Now</h4>
-             </div>
-             <div class="carousel-inner">
-               <div class="carousel-item active">
-                 <img src="./assets/imgs/movies/1.png" alt="...">
-                 <img src="./assets/imgs/movies/2.png" alt="...">
-                 <img src="./assets/imgs/movies/3.png" alt="...">
-                 <img src="./assets/imgs/movies/4.png" alt="...">
-                 <img src="./assets/imgs/movies/5.png" alt="...">
-                 <img src="./assets/imgs/movies/6.png" alt="...">
-                 <img src="./assets/imgs/movies/7.png" alt="...">
-               </div>
-             </div>
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <div class="d-flex">
+          <h3>TV Shows</h3>
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Genres
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Movies</a></li>
+              <li><a class="dropdown-item" href="#">TV Shows</a></li>
+              <li><a class="dropdown-item" href="#">Trailers</a></li>
+            </ul>
           </div>
         </div>
-        <div id="carouselControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
-          <div class="carousel-inner mb-5">
+        <div
+          class="btn-group mr-2 d-flex"
+          role="group"
+          aria-label="First group"
+        >
+          <button type="button" class="btn btn-align">1</button>
+          <button type="button" class="btn btn-align">2</button>
+        </div>
+      </div>
+    </div>
+    <div class="gener-container flex-column">
+      <div id="main" class="p-4">
+        <div
+          id="carouselControls"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div>
+              <h4 class="text-light">Trending Now</h4>
+            </div>
+            <div class="row">
+              <div class="row__inner">
+                <div class="tile">
+                  <div class="carousel-item active">
+                    <img src="./assets/imgs/movies/1.png" alt="..." />
+                  </div>
+                </div>
+                <div class="tile">
+                  <div class="carousel-item active">
+                    <img src="./assets/imgs/movies/2.png" alt="..." />
+                  </div>
+                </div>
+                <div class="tile">
+                  <div class="carousel-item active">
+                    <img src="./assets/imgs/movies/3.png" alt="..." />
+                  </div>
+                </div>
+                <div class="tile">
+                  <div class="carousel-item active">
+                    <img src="./assets/imgs/movies/4.png" alt="..." />
+                  </div>
+                </div>
+                <div class="tile">
+                  <div class="carousel-item active">
+                    <img src="./assets/imgs/movies/5.png" alt="..." />
+                  </div>
+                </div>
+                <div class="tile">
+                  <div class="carousel-item active">
+                    <img src="./assets/imgs/movies/6.png" alt="..." />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="carouselControls"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
             <div>
               <h4 class="text-light">Watch It Again</h4>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/imgs/movies/8.png" alt="...">
-                <img src="./assets/imgs/movies/9.png" alt="...">
-                <img src="./assets/imgs/movies/10.png" alt="...">
-                <img src="./assets/imgs/movies/11.png" alt="...">
-                <img src="./assets/imgs/movies/12.png" alt="...">
-                <img src="./assets/imgs/movies/13.png" alt="...">
-                <img src="./assets/imgs/movies/14.png" alt="...">
+            <div class="row">
+              <div class="row__inner">
+                <div class="tile">
+                  <div class="carousel-item active">
+                    <img src="./assets/imgs/movies/7.png" alt="..." />
+                  </div>
+                </div>
+                <div class="tile">
+                  <div class="carousel-item active">
+                    <img src="./assets/imgs/movies/8.png" alt="..." />
+                  </div>
+                </div>
+                <div class="tile">
+                  <div class="carousel-item active">
+                    <img src="./assets/imgs/movies/9.png" alt="..." />
+                  </div>
+                </div>
+                <div class="tile">
+                  <div class="carousel-item active">
+                    <img src="./assets/imgs/movies/10.png" alt="..." />
+                  </div>
+                </div>
+                <div class="tile">
+                  <div class="carousel-item active">
+                    <img src="./assets/imgs/movies/11.png" alt="..." />
+                  </div>
+                </div>
+                <div class="tile">
+                  <div class="carousel-item active">
+                    <img src="./assets/imgs/movies/12.png" alt="..." />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-       </div>
-       <div id="carouselControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner mb-5">
-          <div>
-            <h4 class="text-light">New Releases</h4>
-          </div>
+        </div>
+        <div
+          id="carouselControls"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./assets/imgs/movies/15.png" alt="...">
-              <img src="./assets/imgs/movies/16.png" alt="...">
-              <img src="./assets/imgs/movies/17.png" alt="...">
-              <img src="./assets/imgs/movies/18.png" alt="...">
-              <img src="./assets/imgs/movies/1.png" alt="...">
-              <img src="./assets/imgs/movies/2.png" alt="...">
-              <img src="./assets/imgs/movies/3.png" alt="...">
+            <div>
+              <h4 class="text-light">New Releases</h4>
+            </div>
+            <div class="row">
+              <div class="row__inner">
+                <div class="tile">
+                  <div class="carousel-item active">
+                    <img src="./assets/imgs/movies/13.png" alt="..." />
+                  </div>
+                </div>
+                <div class="tile">
+                  <div class="carousel-item active">
+                    <img src="./assets/imgs/movies/14.png" alt="..." />
+                  </div>
+                </div>
+                <div class="tile">
+                  <div class="carousel-item active">
+                    <img src="./assets/imgs/movies/15.png" alt="..." />
+                  </div>
+                </div>
+                <div class="tile">
+                  <div class="carousel-item active">
+                    <img src="./assets/imgs/movies/16.png" alt="..." />
+                  </div>
+                </div>
+                <div class="tile">
+                  <div class="carousel-item active">
+                    <img src="./assets/imgs/movies/17.png" alt="..." />
+                  </div>
+                </div>
+                <div class="tile">
+                  <div class="carousel-item active">
+                    <img src="./assets/imgs/movies/18.png" alt="..." />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-     </div>
+    </div>
     </div>
 
     <footer class="footer-container flex-column">
-      <section class="container d-flex justify-content-center justify-content-lg-between">
+      <section
+        class="container d-flex justify-content-center justify-content-lg-between"
+      >
         <div class="d-flex gap-3">
           <i class="bi bi-facebook"></i>
           <i class="bi bi-instagram"></i>
@@ -211,15 +328,24 @@
           </div>
         </div>
       </section>
-      <section class="container d-flex justify-content-center justify-content-lg-between mb-2">
+      <section
+        class="container d-flex justify-content-center justify-content-lg-between mb-2"
+      >
         <div>
-          <button class="btn btn btn-outline-light" type="button" 
-          id="service-button" aria-expanded="false"> Service Code
+          <button
+            class="btn btn btn-outline-light"
+            type="button"
+            id="service-button"
+            aria-expanded="false"
+          >
+            Service Code
           </button>
         </div>
       </section>
-      <section class="container d-flex justify-content-center justify-content-lg-between">
-        © 1997-2023 Netflix, Inc. 
+      <section
+        class="container d-flex justify-content-center justify-content-lg-between"
+      >
+        © 1997-2023 Netflix, Inc.
       </section>
     </footer>
   </body>

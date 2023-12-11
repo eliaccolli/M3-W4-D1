@@ -46,3 +46,36 @@ a {
     border-color: rgb(156, 156, 156);
     color: rgb(156, 156, 156);
 }
+
+.row {
+  width: 100%;
+}
+.row__inner {
+  font-size: 0;
+  display: flex;
+  margin: 1% 0;
+  padding-bottom: 10px;
+}
+.tile {
+  margin-right: 10px;
+} 
+.tile__img {
+  object-fit: cover;
+}
+
+.row__inner:hover {
+  transform: translate3d(-62.5px, 0, 0);
+}
+.row__inner:hover .tile {
+  opacity: 0.3;
+}
+.row__inner:hover .tile:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  opacity: 1;
+}
+.tile:hover ~ .tile {
+  transform: translate3d(125px, 0, 0);
+}
+
+
